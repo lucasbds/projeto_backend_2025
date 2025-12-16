@@ -187,7 +187,7 @@ CREATE TABLE usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
     organizacao_id INT,
     nome VARCHAR(255),
-    perfil ENUM('organizador', 'bilheteria', 'financeiro', 'portaria', 'admin', 'cliente'),
+    perfil ENUM('organizador', 'bilheteria', 'financeiro', 'portaria', 'admin', 'cliente', 'comissario'),
     ativo BOOLEAN,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -218,4 +218,5 @@ CREATE TABLE auditoria (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (usuario_id) REFERENCES usuario (id)
 );
+
 
