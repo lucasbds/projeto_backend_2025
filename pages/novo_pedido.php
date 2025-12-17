@@ -41,7 +41,6 @@
             $prazo_expiracao = $linha['prazo_expiracao'];
           }
         }
-      
     ?>
   <main class="main">
    <h1 class='title'>Cadastrar Pedido</h1>
@@ -150,6 +149,7 @@
             <br>
             <input class="button" type="submit" value="Gravar">
             </div>
+
       </form>
     </div>
     <div>
@@ -201,3 +201,4 @@
     <script src="../scripts/pedido_calc.js"></script>
   </body>
 </html>
+

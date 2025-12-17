@@ -73,7 +73,7 @@
             echo "<td>".$linha['status']."</td>";
             echo "<td><a href='todos_pedidos.php?opcao=e&id=".$linha['id']."'>Excluir</a></td>";
             echo "<td><a href='novo_pedido.php?opcao=a&id=".$linha['id']."'>Editar</a></td></tr>";
-          }
+           }
       ?>
     </table>
   </div>        
